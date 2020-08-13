@@ -10,8 +10,8 @@ namespace Design_Patterns
     {
         public void RealizarCalculo(Orcamento orcamento, IImposto imposto)
         {
-            double valor = imposto.Calcula(orcamento);
-            Console.WriteLine(valor);
+            double resultado = imposto.Calcula(orcamento);
+            Console.WriteLine(resultado);
         }
     }
 }

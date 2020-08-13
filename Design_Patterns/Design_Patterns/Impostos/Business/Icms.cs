@@ -7,9 +7,9 @@ namespace Design_Patterns.Impostos.Business
 {
     public class Icms : IImposto
     {       
-        double IImposto.Calcula(Orcamento orcamento)
+        public double Calcula(Orcamento orcamento)
         {
-            return orcamento.Valor * 0.1;
+            return (orcamento.Valor * 0.05) + 50.00;
         }
     }
 }
