@@ -4,14 +4,14 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Design_Patterns
+namespace Design_Patterns.Business
 {
     public class CalculadorDeImpostos
     {
         public void RealizarCalculo(Orcamento orcamento, IImposto imposto)
         {
-            double resultado = imposto.Calcula(orcamento);
-            Console.WriteLine(resultado);
+            double valor = imposto.Calcula(orcamento);
+            Console.WriteLine(imposto.Nome + ": " + valor);
         }
     }
 }

@@ -7,6 +7,8 @@ namespace Design_Patterns.Impostos.Business
 {
     public class Iccc : IImposto
     {
+        public String Nome { get { return "ICCC"; } }
+
         public double Calcula(Orcamento orcamento)
         {
             double retorno = 0;

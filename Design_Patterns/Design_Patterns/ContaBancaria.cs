@@ -9,7 +9,7 @@ namespace Design_Patterns
     {
         public double Saldo { get; private set;}
         
-        public ContaBancaria(double Saldo)
+        public ContaBancaria(double Saldo = 0)
         {
             this.Saldo = Saldo;
         }
