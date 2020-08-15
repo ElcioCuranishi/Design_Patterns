@@ -6,6 +6,7 @@ namespace Design_Patterns.Impostos.Interface
 {
     public interface IImposto
     {
+        String Nome { get; }
         double Calcula(Orcamento orcamento);
     }
 }

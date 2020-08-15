@@ -6,7 +6,9 @@ using System.Text;
 namespace Design_Patterns.Impostos.Business
 {
     public class Icms : IImposto
-    {       
+    {
+        public String Nome { get { return "ICMS"; } }
+
         public double Calcula(Orcamento orcamento)
         {
             return (orcamento.Valor * 0.05) + 50.00;
