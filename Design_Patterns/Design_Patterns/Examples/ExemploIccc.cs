@@ -1,6 +1,7 @@
 ﻿using Design_Patterns.Business;
-using Design_Patterns.Impostos.Interface;
-using Design_Patterns.Impostos.Business;
+using Design_Patterns.Business.Impostos.Business;
+using Design_Patterns.Business.Impostos.Interface;
+using Design_Patterns.Entidades.Orcamento;
 using System;
 
 namespace Design_Patterns.Examples

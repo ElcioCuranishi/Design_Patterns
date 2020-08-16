@@ -1,6 +1,7 @@
-﻿using Design_Patterns.Descontos.Interface;
+﻿using Design_Patterns.Business.Descontos.Interface;
+using Design_Patterns.Entidades.Orcamento;
 
-namespace Design_Patterns.Descontos
+namespace Design_Patterns.Business.Descontos.Business    
 {
     public class SemDesconto : IDesconto
     {

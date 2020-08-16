@@ -1,6 +1,6 @@
-﻿using Design_Patterns.Descontos;
-using Design_Patterns.Descontos.Business;
-using Design_Patterns.Descontos.Interface;
+﻿using Design_Patterns.Entidades.Orcamento;
+using Design_Patterns.Business.Descontos.Business;
+using Design_Patterns.Business.Descontos.Interface;
 
 namespace Design_Patterns.Business
 {

@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Design_Patterns.Entidades.Orcamento;
+using System;
 
-namespace Design_Patterns.Impostos.Interface
+namespace Design_Patterns.Business.Impostos.Interface
 {
     public interface IImposto
     {

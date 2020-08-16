@@ -1,9 +1,7 @@
-﻿using Design_Patterns.Investimentos.Interface;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Design_Patterns.Business.Investimentos.Interface;
+using Design_Patterns.Entidades.Banco;
 
-namespace Design_Patterns.Investimentos.Business
+namespace Design_Patterns.Business.Investimentos.Business
 {
     public class Conservador : IInvestimento
     {

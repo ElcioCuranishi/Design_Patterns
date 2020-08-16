@@ -1,5 +1,6 @@
-﻿
-namespace Design_Patterns.Descontos.Interface
+﻿using Design_Patterns.Entidades.Orcamento;
+
+namespace Design_Patterns.Business.Descontos.Interface
 {
     public interface IDesconto
     {

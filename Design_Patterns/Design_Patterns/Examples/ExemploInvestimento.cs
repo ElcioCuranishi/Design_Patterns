@@ -1,6 +1,7 @@
 ﻿using Design_Patterns.Business;
-using Design_Patterns.Investimentos.Business;
-using Design_Patterns.Investimentos.Interface;
+using Design_Patterns.Business.Investimentos.Business;
+using Design_Patterns.Business.Investimentos.Interface;
+using Design_Patterns.Entidades.Banco;
 using System;
 
 namespace Design_Patterns.Examples
@@ -18,7 +19,7 @@ namespace Design_Patterns.Examples
 
         static void CalculoDeInvestimento(IInvestimento investimento)
         {
-            ContaBancaria contaBancaria = new ContaBancaria();
+            ContaBancaria contaBancaria = new ContaBancaria("Elcio");
             contaBancaria.Deposita(5000.00);
             RealizadorDeInvestimentos investidor = new RealizadorDeInvestimentos();
 

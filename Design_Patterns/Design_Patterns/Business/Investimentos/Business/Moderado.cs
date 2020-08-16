@@ -1,9 +1,8 @@
-﻿using Design_Patterns.Investimentos.Interface;
+﻿using Design_Patterns.Business.Investimentos.Interface;
+using Design_Patterns.Entidades.Banco;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Design_Patterns.Investimentos.Business
+namespace Design_Patterns.Business.Investimentos.Business
 {
     public class Moderado : IInvestimento
     {

@@ -1,9 +1,8 @@
-﻿using Design_Patterns.Descontos.Interface;
+﻿using Design_Patterns.Business.Descontos.Interface;
+using Design_Patterns.Entidades.Orcamento;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 
-namespace Design_Patterns.Descontos.Business
+namespace Design_Patterns.Business.Descontos.Business
 {
     public class DescontoPorVendaCasada : IDesconto
     {

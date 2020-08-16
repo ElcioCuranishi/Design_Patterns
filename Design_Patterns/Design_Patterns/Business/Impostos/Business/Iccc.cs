@@ -1,9 +1,8 @@
-﻿using Design_Patterns.Impostos.Interface;
+﻿using Design_Patterns.Business.Impostos.Interface;
+using Design_Patterns.Entidades.Orcamento;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Design_Patterns.Impostos.Business
+namespace Design_Patterns.Business.Impostos.Business
 {
     public class Iccc : IImposto
     {

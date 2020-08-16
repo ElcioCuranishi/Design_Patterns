@@ -1,9 +1,8 @@
-﻿using Design_Patterns.Impostos.Business;
-using Design_Patterns.Impostos.Interface;
-using Design_Patterns.Investimentos.Interface;
+﻿using Design_Patterns.Business.Impostos.Business;
+using Design_Patterns.Business.Investimentos.Interface;
+using Design_Patterns.Entidades.Banco;
+using Design_Patterns.Entidades.Orcamento;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Design_Patterns.Business
 {

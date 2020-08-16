@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Design_Patterns
+namespace Design_Patterns.Entidades.Orcamento
 {
     public class Item
     {
