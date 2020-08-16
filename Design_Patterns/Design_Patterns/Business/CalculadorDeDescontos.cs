@@ -8,13 +8,15 @@ namespace Design_Patterns.Business
     {
         public double Calcula(Orcamento orcamento)
         {
-            IDesconto d1 = new DescontoPorMaisDeCinco();
-            IDesconto d2 = new DescontoPorMaisDeQuinhentosReais();
+            IDesconto descontoPorMaisDeCincoUnidades = new DescontoPorMaisDeCinco();
+            IDesconto descontoPorMaisDeQuinhentosReais = new DescontoPorMaisDeQuinhentosReais();
+            IDesconto descontoPorVendaCasada = new DescontoPorVendaCasada();
+            
+            descontoPorMaisDeCincoUnidades.Proximo = descontoPorMaisDeQuinhentosReais;
+            descontoPorMaisDeQuinhentosReais.Proximo = descontoPorVendaCasada;
+            descontoPorVendaCasada.Proximo = new SemDesconto();
 
-            d1.Proximo = d2;
-            d2.Proximo = new SemDesconto();
-
-            return d1.Desconta(orcamento);
+            return descontoPorMaisDeCincoUnidades.Desconto(orcamento);
         }
 
     }

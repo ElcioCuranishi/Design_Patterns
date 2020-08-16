@@ -6,7 +6,7 @@ namespace Design_Patterns.Descontos
     {
         public IDesconto Proximo { get; set; }
 
-        public double Desconta(Orcamento orcamento)
+        public double Desconto(Orcamento orcamento)
         {
             return 0;
         }
