@@ -7,7 +7,7 @@ namespace Design_Patterns
     {
         static void Main(string[] args)
         {
-            new ExemploRequestDadosCotna();
+            new ExemploDesconto();
         }
     }
 }

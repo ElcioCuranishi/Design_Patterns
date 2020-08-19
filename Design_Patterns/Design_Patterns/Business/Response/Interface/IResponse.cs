@@ -5,7 +5,7 @@ namespace Design_Patterns.Business.Response.Interface
 {
     public interface IResponse
     {
-        IResponse Proximo { get; set; }
+        IResponse SetProximo(IResponse proximo);
         String Retorno(ContaBancaria conta, RequestDadosConta request);
     }
 }

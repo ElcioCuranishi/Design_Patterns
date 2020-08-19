@@ -3,11 +3,9 @@ using Design_Patterns.Business.Response.Interface;
 
 namespace Design_Patterns.Business.Response.Business
 {
-    public class ResponseXml : IResponse
+    public class ResponseXml : AbstractResponse
     {
-        public IResponse Proximo { get; set; }
-
-        public string Retorno(ContaBancaria conta, RequestDadosConta request)
+        public override string Retorno(ContaBancaria conta, RequestDadosConta request)
         {
             if (Formato.XML.Equals(request.Formato))
             {
@@ -16,7 +14,7 @@ namespace Design_Patterns.Business.Response.Business
                 return retornoXml;
             }
             else
-                return Proximo.Retorno(conta, request);
+                return base.Retorno(conta, request);
         }
     }
 }
