@@ -3,16 +3,14 @@ using Design_Patterns.Entidades.Orcamento;
 
 namespace Design_Patterns.Business.Descontos.Business
 {
-    public class DescontoPorMaisDeQuinhentosReais : IDesconto
+    public class DescontoPorMaisDeQuinhentosReais : AbstractDesconto
     {
-        public IDesconto Proximo { get; set; }
-
-        public double Desconto(Orcamento orcamento)
+        public override double Desconto(Orcamento orcamento)
         {
             if (orcamento.Valor > 500.00)
                 return orcamento.Valor * 0.07;
             else
-                return Proximo.Desconto(orcamento);
+                return base.Desconto(orcamento);
         }
     }
 }

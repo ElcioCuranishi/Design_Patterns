@@ -4,11 +4,9 @@ using System.Collections.Generic;
 
 namespace Design_Patterns.Business.Descontos.Business
 {
-    public class DescontoPorVendaCasada : IDesconto
+    public class DescontoPorVendaCasada : AbstractDesconto
     {
-        public IDesconto Proximo { get; set; }
-
-        public double Desconto(Orcamento orcamento)
+        public override double Desconto(Orcamento orcamento)
         {
             List<Item> listaItens = (List<Item>)orcamento.Itens;
 
@@ -16,7 +14,7 @@ namespace Design_Patterns.Business.Descontos.Business
                 && listaItens.Exists(x => x.Nome.ToUpper() == "CANETA"))
                 return orcamento.Valor * 0.05;
             else
-                return Proximo.Desconto(orcamento);
+                return base.Desconto(orcamento);
         }
     }
 }

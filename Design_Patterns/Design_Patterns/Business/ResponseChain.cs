@@ -11,13 +11,14 @@ namespace Design_Patterns.Business
     {
         public String DadosConta(ContaBancaria conta, RequestDadosConta request)
         {
+            
             IResponse responseXml = new ResponseXml();
             IResponse responseCsv = new ResponseCsv();
             IResponse responsePorcento = new ResponsePorcento();
 
-            responseXml.Proximo = responseCsv;
-            responseCsv.Proximo = responsePorcento;
-            responsePorcento.Proximo = new ResponseSemFormato();
+            responseXml.
+                 SetProximo(responseCsv).
+                 SetProximo(responsePorcento);
 
             return responseXml.Retorno(conta, request);            
         }
