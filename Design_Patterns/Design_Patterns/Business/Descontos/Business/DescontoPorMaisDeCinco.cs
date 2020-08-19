@@ -1,5 +1,6 @@
 ﻿using Design_Patterns.Business.Descontos.Interface;
 using Design_Patterns.Entidades.Orcamento;
+using System.Collections.Generic;
 
 namespace Design_Patterns.Business.Descontos.Business
 {

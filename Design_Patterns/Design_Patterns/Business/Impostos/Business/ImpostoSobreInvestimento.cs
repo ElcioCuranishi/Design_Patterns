@@ -6,7 +6,6 @@ namespace Design_Patterns.Business.Impostos.Business
 {
     class ImpostoSobreInvestimento : IImposto
     {
-        public String Nome { get { return "Imposto sobre Investimento"; } }
         public double Calcula(Orcamento orcamento)
         {
             return orcamento.Valor * 0.25;

@@ -9,7 +9,7 @@ namespace Design_Patterns.Business
         public void RealizarCalculo(Orcamento orcamento, IImposto imposto)
         {
             double valor = imposto.Calcula(orcamento);
-            Console.WriteLine(imposto.Nome + ": " + valor);
+            Console.WriteLine(valor);
         }
     }
 }
