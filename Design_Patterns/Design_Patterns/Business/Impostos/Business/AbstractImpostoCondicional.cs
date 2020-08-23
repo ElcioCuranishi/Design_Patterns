@@ -14,8 +14,8 @@ namespace Design_Patterns.Business.Impostos.Business
                 return ImpostoMaximo(orcamento);
             return ImpostoMinimo(orcamento);
         }        
-        public abstract bool DeveUsarTaxaMaxima(Orcamento orcamento);
-        public abstract double ImpostoMaximo(Orcamento orcamento);
-        public abstract double ImpostoMinimo(Orcamento orcamento);
+        protected abstract bool DeveUsarTaxaMaxima(Orcamento orcamento);
+        protected abstract double ImpostoMaximo(Orcamento orcamento);
+        protected abstract double ImpostoMinimo(Orcamento orcamento);
     }
 }
