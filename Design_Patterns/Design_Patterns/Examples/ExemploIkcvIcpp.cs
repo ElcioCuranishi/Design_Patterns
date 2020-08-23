@@ -12,8 +12,8 @@ namespace Design_Patterns.Examples
     {
         public ExemploIkcvIcpp()
         {
-            IImposto ikcv = new IKCV();
-            IImposto icpp = new ICPP();
+            IImposto ikcv = new Ikcv();
+            IImposto icpp = new Icpp();
 
             var imposto = new CalculadorDeImpostos();
 
